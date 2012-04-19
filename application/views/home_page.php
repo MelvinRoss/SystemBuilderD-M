@@ -72,7 +72,7 @@
     </div>
 
     <footer>
-     <p>&copy; Copyright  by KouroshThaKing</p>
+     <p>&copy; Copyright  by KouroshThaKing and Asno</p>
     </footer>
   </div>
 </body>
