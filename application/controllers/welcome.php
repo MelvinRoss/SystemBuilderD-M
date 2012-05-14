@@ -45,10 +45,16 @@ class Welcome extends CI_Controller {
                 }
         }
         public function cpu(){
-                if($this->input->post('cpusubmit')){
-                   $data['onsubmit']=true;
-                    $this->load->view('cpu',$data);
-                }
+		$this->load->model('pcbuilder_model');
+		if($this->input->post('cpusubmit')){
+			$data['onsubmit']=true;
+			$data['brand']=$this->input->post('cpu');
+			$data['socket']=$this->input->post('sockets');
+			$data['cores']=$this->input->post('core');
+			$data['minimumClock']=$this->input->post('speed');
+			$this->pcbuilder_model->getProcessorList($data);
+            $this->load->view('cpu',$data);
+		}
                 else{
                     $data['onsubmit']=false;
                     $this->load->view('cpu',$data);  
