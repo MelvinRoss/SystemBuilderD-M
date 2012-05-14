@@ -4,18 +4,18 @@
  * and open the template in the editor.
  * 
  */
-echo "<div align='right'>".anchor('welcome/gpu', 'Change Search Options for GPU')."</div>";
+echo "<div align='right'>".anchor('welcome/hdd', 'Change Search Options for Hard Drive')."</div>";
 
 $searchresult=10; //add the number of results here
 $arrayresults=array();
 
-$tableheader=array('','Model','Stream P', 'Core Clock','Memory','#Monitor','Price','Add to Build');
-$data['Manufacturer']="Radeon 6770";
-$data['Socket']="840";
-$data['SATA']="850Mhz";
-$data['RAM']="2GB";
-$data['PCIE']="4";
-$data['price']="$243.32";
+$tableheader=array('','Model','Capacity', 'Speed','Cache','Type','Price','Add to Build');
+$data['Manufacturer']="Seagate";
+$data['Socket']="750GB";
+$data['SATA']="7200RPM";
+$data['RAM']="32MB";
+$data['PCIE']="SATA";
+$data['price']="$94.32";
 
 for($i=0;$i<$searchresult;$i++){
     

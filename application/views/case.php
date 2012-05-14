@@ -28,6 +28,7 @@
             
         });
     </script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>/JS/renderScroll.js"></script>
     <!--
 <script>
 // Create a new YUI instance and populate it with the required modules.
@@ -122,7 +123,18 @@ echo "<body>
     <div id="introborder">
         <div id="inborder">
 <?php
-       $this->load->view('partforms/caseform');         
+   
+        if($onsubmit==false){
+            echo "<div id='formpart'>";
+       $this->load->view('partforms/caseform'); 
+            echo "</div>";
+        }
+        else
+        {
+            echo "<div id='searchpart'>";
+            $this->load->view('partsearch/searchcase');
+            echo "</div>";
+        }
 ?>
                  
         </div> 

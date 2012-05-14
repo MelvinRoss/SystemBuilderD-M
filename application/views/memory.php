@@ -28,6 +28,7 @@
             
         });
     </script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>/JS/renderScroll.js"></script>
 
 <style>
 .yui3-g .content {
@@ -54,7 +55,18 @@ echo "<body>
     <div id="introborder">
         <div id="inborder">
 <?php
-       $this->load->view('partforms/memform');         
+   
+        if($onsubmit==false){
+            echo "<div id='formpart'>";
+       $this->load->view('partforms/memform'); 
+            echo "</div>";
+        }
+        else
+        {
+            echo "<div id='searchpart'>";
+            $this->load->view('partsearch/searchmemory');
+            echo "</div>";
+        }
 ?>
                  
         </div> 

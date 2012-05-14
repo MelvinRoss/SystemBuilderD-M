@@ -6,12 +6,17 @@
  * and open the template in the editor.
  */
 $test="border:3px solid red";
+
 echo"    <header>
 		<div id='part_nav_bar' class='yui3-g'>
 		<nav id='navbar'>
                     
                  
                  ";
+                 
+                //echo "<div class='yui3-u-1-12 navbar'>";
+      		//</div>";
+               
                  if($part=="CPU")
 		echo "<div class='yui3-u-1-12 navbar' style='".$test."'> ";
                  else
@@ -90,3 +95,6 @@ echo"    <header>
     	</nav>
 	</div>   
     </header>
+    <?php
+    echo "<div id='home_nav' align='left' style='cursor:pointer;' onclick='document.location=\"\"'></div>";
+    ?>

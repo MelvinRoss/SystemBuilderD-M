@@ -21,7 +21,7 @@
         
         $newbrand=array_merge($any,$brand);
         $brand=$newbrand;
-            echo form_open('welcome/psu');
+            echo form_open('welcome/hdd');
             echo "Keywords";
             echo nbs(3);
             echo form_input('psu_search');
