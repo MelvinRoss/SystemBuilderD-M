@@ -18,6 +18,7 @@
  		
 
 	});
+        
 </script>
 <style>
 .yui3-g .content {
@@ -25,6 +26,15 @@
     margin-right:10px; /* "column" gutters */
     padding: 1em;
 }
+
+#proc_nav{
+    background-image:url('CPU.png');
+    width:501px;
+    height:520px;
+}
+
+    
+
 </style>
 	
 	
@@ -64,15 +74,62 @@
       			<div id="extras_nav"> Shiny Extras</div>
       		</div
     	</nav>
-	</div>   
+	</div> 
+        <div align="right">Home</div>
     </header>
+     
 
-    <div>
+     <fieldset><div id="legend">PC Builder</div>
+    <div id="introborder">
+            <div id="introtitle" align="center"> How will you be Building?</h1>
+            <?php
+            echo br(3);
+           
+            echo "<table><tr><td>";
+                echo form_open('welcome/action');
+                $btn_guided = array(
+                    'type'      => 'image',
+                    'src'        => base_url().'images/guided_button_1.png',
+                    'name'        => 'button',
+                    'width'     => '280',
+                    'height'    => '150',
+                    'value'        => 'guided'
+                    
+                );
+               $btn_manual = array(
+                    'type'      => 'image',
+                    'src'        => base_url().'images/manual_button_1.png',
+                    'name'        => 'button',
+                    'width'     => '280',
+                    'height'    => '150',
+                    'value'        => 'manual'
+                    
+                );
+               
+                echo form_submit($btn_guided);
+                echo form_close(); 
+                echo "</td><td>";
+                
+                echo nbs(3);
+                    
+                echo "</td><td>";
+               
+                echo form_open("welcome/advanced_1");
+                echo form_submit($btn_manual);
+                echo form_close(); 
+                echo "</td></tr></table>";
+
+
+            
+            ?>
+            
+        
       
-    </div>
-
+        </div> 
+         </fieldset>
     <footer>
-     <p>&copy; Copyright  by KouroshThaKing and Asno</p>
+     <p>&copy; Copyright  by KouroshThaKing and Asno12
+     </p>
     </footer>
   </div>
 </body>

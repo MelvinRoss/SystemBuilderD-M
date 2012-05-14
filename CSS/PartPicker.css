@@ -1,0 +1,170 @@
+header{
+	background-color:blue;
+}
+
+#part_nav_bar {
+    margin:auto;
+    background-color:yellow;
+	width:800px; 
+/*	height: 200px; */
+}
+
+
+.navbar{
+ 
+
+border-style:solid;
+border-width:5px;
+border-color:yellow;
+background-color: #8DD5E7;
+width:70px;
+height:70px;
+}
+
+.navbar:hover{
+    background-color: #7AA5E7;
+}
+
+#proc_nav{
+    background-image:url('../images/CPU.png');
+         background-repeat: no-repeat;
+    background-size: 70px 70px;
+    width:70px;
+    height:70px;
+  
+}
+#mb_nav{
+    border-color:red;
+    background-image:url('../images/mobo.png');
+         background-repeat: no-repeat;
+    background-size: 70px 70px;
+width:70px;
+height:70px;
+}
+#video_nav{
+    background-image:url('../images/ATI_GPU.png');
+         background-repeat: no-repeat;
+    background-size: 70px 70px;background-size: 50px 50px;
+width:70px;
+height:70px;
+}
+#ram_nav{
+    background-image:url('../images/memory.png');
+        background-repeat: no-repeat;
+    background-size: 70px 70px;
+width:70px;
+height:70px;
+}
+#ps_nav{
+    background-image:url('../images/psu.png');
+       background-repeat: no-repeat;
+    background-size: 70px 70px;
+width:70px;
+height:70px;
+}
+#hdd_nav{
+    background-image:url('../images/hdd.png');
+         background-repeat: no-repeat;
+    background-size: 70px 70px;
+width:70px;
+height:70px;
+}
+#case_nav{
+    background-image:url('../images/Case.png');
+     background-repeat: no-repeat;
+    background-size: 70px 70px;
+ width:70px;
+height:70px;
+}
+#extras_nav{
+     background-image:url('../images/accessory.png');
+     background-repeat: no-repeat;
+    background-size: 70px 70px;
+width:70px;
+height:70px;
+    
+}
+#introborder {
+margin-left: 90px;
+padding: 15px; 
+width:900px;
+height:500px;
+border:3px solid blue;
+}
+#introtitle {
+font-size:250%;
+font-weight:bold;
+}
+#inborder #searchpart {
+padding-top: 20px;
+padding-left: 90px;
+font-size:120%;
+
+}
+#inborder #formpart{
+padding-top: 70px;
+padding-left: 90px;
+font-size:150%;
+font-weight:bold;
+}
+#slider-bg { 
+background:url(http://yui.yahooapis.com/2.9.0/build/slider/assets/bg-fader.gif) 5px 0 no-repeat; 
+	} 
+#slider-thumb { 
+left: 0; 
+} 
+#legend{
+    margin-left: 90px;
+    font-size: 130%;
+    font-weight:bold;
+}
+#motherboardborder{
+margin-left: 90px;
+padding: 15px; 
+width:900px;
+height:500px;
+border:3px solid blue;  
+}
+.optionweight{
+    font-size: 300%;
+    font-weight:bold;
+    
+}
+
+.yui3-scrollview-content table {
+    margin:0;
+    padding:0;
+}
+
+.yui3-scrollview-content td {
+    border:2px solid blue;
+    margin:0;
+    padding:0;
+    width:80px;
+    list-style:none;
+   
+    
+    
+}
+#scrollview-header table{
+    margin:0;
+    padding:0;
+}
+
+#scrollview-header td {
+    border:2px solid blue;
+    margin:0;
+    list-style:none;
+    width:80px;
+    text-align: center;
+}
+    
+    /* 
+    display: -moz-inline-stack;
+    display: inline-block;
+    /*display: inline;*/
+
+
+
+
+
