@@ -36,49 +36,17 @@
     
 
 </style>
+<?php
+        $data['part']="Home";
 	
-	
-	<title>Obligatory Catchy Name - The place to plan your computer builds</title>
-</head>
+echo"<title>Obligatory Catchy Name - ".$data['part']."</title>";
+echo "</head>";
 
-<body>
-  <div>
-    <header>
-		<div id="part_nav_bar" class="yui3-g">
-		<nav id="navbar">
-			<div class="yui3-u-1-12 navbar">  
-      			<div id="proc_nav">Processor</div>
-      		</div>
-     		<div class="yui3-u-1-12 navbar" >  
-      			<div id="mb_nav">Motherboard</div>
-      		</div>
-      		<div class="yui3-u-1-12 navbar">  
-      			<div id="video_nav">Video Card</div>
-      		</div>
-      		<div class="yui3-u-1-12 navbar">  
-      			<div id="ram_nav">Memory</div>
-			</div>
-			<div class="yui3-u-1-12 navbar">  
-      			<div id="hdd_nav">Hard Drive</div>
-      		</div>
-      		<div class="yui3-u-1-12 navbar">  
-      			<div id="optical_nav">Optical Drives</div>
-      		</div>
-      		<div class="yui3-u-1-12 navbar">  
-      			<div id= "ps_nav">Power Supply</div>
-      		</div>
-      		<div class="yui3-u-1-12 navbar">  
-      			<div id="case_nav">Case</div>
-      		</div>
-      		<div class="yui3-u-1-12 navbar">  
-      			<div id="extras_nav"> Shiny Extras</div>
-      		</div
-    	</nav>
-	</div> 
-        <div align="right">Home</div>
-    </header>
-     
+echo "<body>
+  <div>";
 
+       // $this->load->view('navheader',$data);
+        ?>
      <fieldset><div id="legend">PC Builder</div>
     <div id="introborder">
             <div id="introtitle" align="center"> How will you be Building?</h1>

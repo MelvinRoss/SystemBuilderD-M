@@ -117,6 +117,10 @@ class Welcome extends CI_Controller {
         public function myparts(){
             $this->load->view('myparts');
         }
+        public function removemyparts(){
+            
+            //remove the selected part
+        }
         
        
         

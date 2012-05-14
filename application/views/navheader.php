@@ -13,9 +13,14 @@ echo"    <header>
                     
                  
                  ";
+             if($part=="Home")
+                echo "<div class='yui3-u-1-12 navbar' style='".$test."'> ";
+                else
+                echo "<div class='yui3-u-1-12 navbar'> ";
+                
+                echo "<div id='home_nav' align='left' style='cursor:pointer;' onclick='document.location=\"home\"'></div>
                  
-                //echo "<div class='yui3-u-1-12 navbar'>";
-      		//</div>";
+      		</div>";
                
                  if($part=="CPU")
 		echo "<div class='yui3-u-1-12 navbar' style='".$test."'> ";
@@ -88,13 +93,23 @@ echo"    <header>
                  else
                 echo "<div class='yui3-u-1-12 navbar'>";
                     
-               echo " <div id='extras_nav' style='cursor:pointer;' onclick='document.location=\"accessory\"'></div>
+               echo " <div id='extras_nav' style='cursor:pointer;' onclick='document.location=\"accessory\"'></div></div>";
+                   
+               if($part=="My List")
+                 
+		echo "<div class='yui3-u-1-12 navbar' style='".$test."'> ";
+                 else
+                echo "<div class='yui3-u-1-12 navbar'>";
+                    
+               echo " <div id='list_nav' style='cursor:pointer;' onclick='document.location=\"myparts\"'></div>
+                   
+
       		</div>";
-                 ?>
+                 echo"
 
     	</nav>
 	</div>   
-    </header>
-    <?php
-    echo "<div id='home_nav' align='left' style='cursor:pointer;' onclick='document.location=\"\"'></div>";
+    </header>";
+                 
+
     ?>

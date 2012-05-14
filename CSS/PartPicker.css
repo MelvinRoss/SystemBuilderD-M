@@ -87,9 +87,17 @@ height:70px;
 #home_nav{
      background-image:url('../images/finalpcbuild1.png');
      background-repeat: no-repeat;
-    background-size: 100px 100px;
-width:100px;
-height:100px;
+    background-size: 70px 70px;
+width:70px;
+height:70px;
+    
+}
+#list_nav{
+         background-image:url('../images/list.png');
+     background-repeat: no-repeat;
+    background-size: 70px 70px;
+width:70px;
+height:70px;
     
 }
 

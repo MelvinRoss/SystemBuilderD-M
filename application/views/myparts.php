@@ -1,10 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+ 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+ 	<meta name="description" content="" />
+ 	<meta name="author" content="KouroshThaKing" />
+ 	<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>CSS/PartPicker.css" media="screen, projection" /> 
+ 	<link rel="stylesheet" href="http://yui.yahooapis.com/3.4.1/build/cssreset/cssreset.css" type="text/css">
+ 	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.4.1/build/cssgrids/grids-min.css">
+	<script type="text/javascript" src="http://yui.yahooapis.com/3.4.1/build/yui/yui-min.js"></script>
+        <!-- Dependencies --> 
+        <script src="http://yui.yahooapis.com/2.9.0/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+        <script src="http://yui.yahooapis.com/2.9.0/build/dragdrop/dragdrop-min.js"></script>
+ 
+        <!-- Slider skin (optional) 
+        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.9.0/build/slider/assets/skins/sam/slider.css">
+        --> 
+        <!-- Slider source file --> 
+        <script src="http://yui.yahooapis.com/2.9.0/build/slider/slider-min.js"></script>
+	
+        <script>
+	// Create a YUI sandbox on your page.
+	YUI().use('node', 'event', function (Y) {
+            
+        });
+    </script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>/JS/renderScroll.js"></script>  
+<style>
+.yui3-g .content {
+    border: 2px solid #000;
+    margin-right:10px; /* "column" gutters */
+    padding: 1em;
+}
+
+
+    
+
+</style>
+<?php
+        $data['part']="My List";
+	
+echo"<title>Obligatory Catchy Name - ".$data['part']."</title>";
+echo "</head>";
+
+echo "<body>
+  <div>";
+
+      $this->load->view('navheader',$data);
+      
+      ?>
+     <fieldset><div id="legend">My List</div>
+    <div id="introborder">
+        <div id="inborder">
+<?php
+   /*
+        if($onsubmit==false){
+            echo "<div id='formpart'>";
+       $this->load->view('partforms/hddform'); 
+            echo "</div>";
+        }
+    */
+       
+        {
+            echo "<div id='searchpart'>";
+            $this->load->view('partsearch/searchmylist');
+            echo "</div>";
+        }
+ 
+?>
+                 
+        </div> 
+            
+         </fieldset>
+    <footer>
+     <p>&copy; Copyright  by KouroshThaKing and Asno12
+     </p>
+    </footer>
+  </div>
+</body>
+</html>
 <?php
 
-echo "You Added";
-//Query database to get all items where itemid==pickeditemid;
-
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-?>

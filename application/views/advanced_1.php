@@ -41,48 +41,14 @@ td{
 </style>
 	
 	
-	<title>Obligatory Catchy Name - The place to plan your computer builds</title>
+	<title>Obligatory Catchy Name - Pick A Part</title>
 </head>
 
 <body>
   <div>
-    <header>
-		<div id="part_nav_bar" class="yui3-g">
-		<nav id="navbar">
-			<div class="yui3-u-1-12 navbar">  
-      			<div id="proc_nav">Processor</div>
-      		</div>
-     		<div class="yui3-u-1-12 navbar" >  
-      			<div id="mb_nav">Motherboard</div>
-      		</div>
-      		<div class="yui3-u-1-12 navbar">  
-      			<div id="video_nav">Video Card</div>
-      		</div>
-      		<div class="yui3-u-1-12 navbar">  
-      			<div id="ram_nav">Memory</div>
-			</div>
-			<div class="yui3-u-1-12 navbar">  
-      			<div id="hdd_nav">Hard Drive</div>
-      		</div>
-      		<div class="yui3-u-1-12 navbar">  
-      			<div id="optical_nav">Optical Drives</div>
-      		</div>
-      		<div class="yui3-u-1-12 navbar">  
-      			<div id= "ps_nav">Power Supply</div>
-      		</div>
-      		<div class="yui3-u-1-12 navbar">  
-      			<div id="case_nav">Case</div>
-      		</div>
-      		<div class="yui3-u-1-12 navbar">  
-      			<div id="extras_nav"> Shiny Extras</div>
-      		</div
-    	</nav>
-	</div>   
-        <div id="navhome" align="right" > <?php echo anchor('','Home'); //takes to homepage ?></div>
-        
-    </header>
-
-     <fieldset><div id="legend">PC Builder</div>
+     <fieldset><div id="legend">PC Builder</div><?php
+         echo "<div id='returnhome'>".anchor('welcome/home', 'Home')."</div>";
+         ?>
     <div id="introborder">
             <div id="introtitle" align="center"> Pick a Starting Part</h1>
             <?php
